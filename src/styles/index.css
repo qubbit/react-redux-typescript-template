@@ -1,3 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css?family=Monda&display=swap');
+
+body {
+  color: #fff;
+  min-height: 100vh;
+  font-size: 24px;
+  font-family: 'Monda', sans-serif;
+  background-image: linear-gradient(
+    to right top,
+    #407cd4,
+    #3a6eda,
+    #435edd,
+    #554adb,
+    #6c2cd5
+  );
+}
+
+input[type='search'] {
+  color: #333;
+  padding: 4px;
+}

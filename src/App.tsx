@@ -1,10 +1,11 @@
 import React from 'react';
 import { Link, Router, RouteComponentProps } from '@reach/router';
+import LastFm from './LastFm';
 
 const App: React.FC = () => {
   return (
     <div className="app">
-      <h1>Da App</h1>
+      <h1>Music Graph</h1>
       <nav className="flex">
         <Link className="mr-6" to="/">
           Home
@@ -24,6 +25,7 @@ const App: React.FC = () => {
 const Home: React.FC<RouteComponentProps> = ({ path }: RouteComponentProps) => (
   <div>
     <h2>Welcome</h2>
+    <LastFm />
   </div>
 );
 
